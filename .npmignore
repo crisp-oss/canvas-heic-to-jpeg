@@ -1,0 +1,8 @@
+test/
+examples/
+.github/
+.gitignore
+.jshintrc
+.jscsrc
+.checkbuild
+package-lock.json

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HEIC to JPEG — example</title>
+    <style>
+      body { font-family: -apple-system, system-ui, sans-serif; padding: 16px; }
+      img { max-width: 100%; display: block; margin-top: 16px; }
+      .info { margin-top: 8px; color: #555; font-size: 14px; }
+    </style>
+  </head>
+  <body>
+    <h1>HEIC to JPEG</h1>
+
+    <p>Pick a <code>.heic</code> / <code>.heif</code> file (requires Safari):</p>
+
+    <input id="picker" type="file" accept=".heic,.heif,image/heic,image/heif" />
+
+    <div class="info" id="info"></div>
+    <img id="preview" alt="" />
+
+    <script type="module">
+      import HeicToJpeg from "../dist/heic-to-jpeg.js";
+
+      const picker  = document.getElementById("picker");
+      const preview = document.getElementById("preview");
+      const info    = document.getElementById("info");
+
+      const converter = new HeicToJpeg();
+      converter.setQuality(0.9);
+      converter.setMaxDimensions(2048, 2048);
+
+      picker.addEventListener("change", async () => {
+        const file = picker.files && picker.files[0];
+
+        if (!file) {
+          return;
+        }
+
+        if (!converter.isHeic(file)) {
+          info.textContent = "Not a HEIC file, trying anyway...";
+        }
+
+        const before = performance.now();
+        const jpeg   = await converter.convert(file);
+        const ms     = Math.round(performance.now() - before);
+
+        info.textContent = (
+          "Converted " + file.name + " -> " + Math.round(jpeg.size / 1024)  +
+            " KB JPEG in " + ms + " ms"
+        );
+
+        preview.src = URL.createObjectURL(jpeg);
+      });
+    </script>
+  </body>
+</html>

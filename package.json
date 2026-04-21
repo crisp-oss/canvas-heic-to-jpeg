@@ -1,0 +1,63 @@
+{
+  "name": "heic-to-jpeg",
+  "description": "Tiny zero-dependency HEIC to JPEG converter using the browser canvas (Safari-first, mobile-friendly)",
+  "version": "1.0.0",
+  "homepage": "https://github.com/crisp-oss/heic-to-jpeg",
+  "license": "MIT",
+  "author": {
+    "name": "Baptiste Jamin",
+    "email": "baptiste@crisp.chat",
+    "url": "https://jamin.me/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/crisp-oss/heic-to-jpeg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/crisp-oss/heic-to-jpeg/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/crisp-oss/heic-to-jpeg/blob/master/LICENSE"
+    }
+  ],
+  "type": "module",
+  "main": "dist/heic-to-jpeg.js",
+  "module": "dist/heic-to-jpeg.js",
+  "types": "dist/heic-to-jpeg.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/heic-to-jpeg.d.ts",
+      "import": "./dist/heic-to-jpeg.js"
+    }
+  },
+  "engines": {
+    "node": ">= 16.0.0"
+  },
+  "scripts": {
+    "test": "eslint lib",
+    "build": "npx tsc && npx tsc-alias"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "8.39.1",
+    "@typescript-eslint/parser": "8.39.1",
+    "eslint": "9.29.0",
+    "eslint-plugin-crisp": "1.2.12",
+    "eslint-plugin-jsdoc": "50.8.0",
+    "globals": "15.15.0",
+    "tsc-alias": "1.8.16",
+    "typescript": "5.9.3"
+  },
+  "keywords": [
+    "heic",
+    "heif",
+    "jpeg",
+    "jpg",
+    "canvas",
+    "safari",
+    "ios",
+    "convert",
+    "image"
+  ]
+}
