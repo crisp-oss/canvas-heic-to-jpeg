@@ -1,6 +1,6 @@
 # HEIC to JPEG
 
-[![Test and Build](https://github.com/crisp-oss/heic-to-jpeg/actions/workflows/test.yml/badge.svg)](https://github.com/crisp-oss/heic-to-jpeg/actions/workflows/test.yml) [![Version](https://img.shields.io/npm/v/heic-to-jpeg.svg)](https://www.npmjs.com/package/heic-to-jpeg) [![Downloads](https://img.shields.io/npm/dt/heic-to-jpeg.svg)](https://www.npmjs.com/package/heic-to-jpeg) [![License](https://img.shields.io/npm/l/heic-to-jpeg.svg)](./LICENSE)
+[![Test and Build](https://github.com/crisp-oss/heic-to-jpeg/actions/workflows/test.yml/badge.svg)](https://github.com/crisp-oss/heic-to-jpeg/actions/workflows/test.yml) [![Version](https://img.shields.io/npm/v/canvas-heic-to-jpeg.svg)](https://www.npmjs.com/package/canvas-heic-to-jpeg) [![Downloads](https://img.shields.io/npm/dt/canvas-heic-to-jpeg.svg)](https://www.npmjs.com/package/canvas-heic-to-jpeg) [![License](https://img.shields.io/npm/l/canvas-heic-to-jpeg.svg)](./LICENSE)
 
 Tiny zero-dependency HEIC/HEIF to JPEG converter for the browser, backed by the native canvas pipeline. Designed for **Safari on iOS**, where WebKit decodes HEIC natively — no WASM, no 2 MB polyfill.
 
@@ -20,21 +20,21 @@ Every other HEIC-to-JPEG library ships a WASM decoder (libheif, ~2 MB) to suppor
 ## Installation
 
 ```bash
-npm install --save heic-to-jpeg
+npm install --save canvas-heic-to-jpeg
 ```
 
 Or load it directly in a `<script type="module">`:
 
 ```html
 <script type="module">
-  import HeicToJpeg from "./node_modules/heic-to-jpeg/dist/heic-to-jpeg.js";
+  import HeicToJpeg from "./node_modules/canvas-heic-to-jpeg/dist/heic-to-jpeg.js";
 </script>
 ```
 
 ## Quick start
 
 ```js
-import HeicToJpeg from "heic-to-jpeg";
+import HeicToJpeg from "canvas-heic-to-jpeg";
 
 const converter = new HeicToJpeg();
 
