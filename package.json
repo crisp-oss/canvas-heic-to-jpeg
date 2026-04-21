@@ -1,8 +1,8 @@
 {
   "name": "canvas-heic-to-jpeg",
   "description": "Tiny zero-dependency HEIC to JPEG converter using the browser canvas (Safari-first, mobile-friendly)",
-  "version": "1.0.1",
-  "homepage": "https://github.com/crisp-oss/heic-to-jpeg",
+  "version": "1.0.2",
+  "homepage": "https://github.com/crisp-oss/canvas-heic-to-jpeg",
   "license": "MIT",
   "author": {
     "name": "Baptiste Jamin",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/crisp-oss/heic-to-jpeg.git"
+    "url": "git+https://github.com/crisp-oss/canvas-heic-to-jpeg.git"
   },
   "bugs": {
-    "url": "https://github.com/crisp-oss/heic-to-jpeg/issues"
+    "url": "https://github.com/crisp-oss/canvas-heic-to-jpeg/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/crisp-oss/heic-to-jpeg/blob/master/LICENSE"
+      "url": "https://github.com/crisp-oss/canvas-heic-to-jpeg/blob/master/LICENSE"
     }
   ],
   "type": "module",

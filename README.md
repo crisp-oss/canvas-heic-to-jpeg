@@ -1,6 +1,6 @@
 # HEIC to JPEG
 
-[![Test and Build](https://github.com/crisp-oss/heic-to-jpeg/actions/workflows/test.yml/badge.svg)](https://github.com/crisp-oss/heic-to-jpeg/actions/workflows/test.yml) [![Build and Release](https://github.com/crisp-oss/heic-to-jpeg/actions/workflows/build.yml/badge.svg)](https://github.com/crisp-oss/heic-to-jpeg/actions/workflows/build.yml) [![Version](https://img.shields.io/npm/v/canvas-heic-to-jpeg.svg)](https://www.npmjs.com/package/canvas-heic-to-jpeg) [![Downloads](https://img.shields.io/npm/dt/canvas-heic-to-jpeg.svg)](https://www.npmjs.com/package/canvas-heic-to-jpeg) [![License](https://img.shields.io/npm/l/canvas-heic-to-jpeg.svg)](./LICENSE)
+[![Test and Build](https://github.com/crisp-oss/canvas-heic-to-jpeg/actions/workflows/test.yml/badge.svg)](https://github.com/crisp-oss/canvas-heic-to-jpeg/actions/workflows/test.yml) [![Build and Release](https://github.com/crisp-oss/canvas-heic-to-jpeg/actions/workflows/build.yml/badge.svg)](https://github.com/crisp-oss/canvas-heic-to-jpeg/actions/workflows/build.yml) [![Version](https://img.shields.io/npm/v/canvas-heic-to-jpeg.svg)](https://www.npmjs.com/package/canvas-heic-to-jpeg) [![Downloads](https://img.shields.io/npm/dt/canvas-heic-to-jpeg.svg)](https://www.npmjs.com/package/canvas-heic-to-jpeg) [![License](https://img.shields.io/npm/l/canvas-heic-to-jpeg.svg)](./LICENSE)
 
 Tiny zero-dependency HEIC/HEIF to JPEG converter for the browser, backed by the native canvas pipeline. Designed for **Safari on iOS**, where WebKit decodes HEIC natively — no WASM, no 2 MB polyfill.
 
